@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0</authoring_tool>
     </contributor>
-    <created>2018-10-27T14:08:17</created>
-    <modified>2018-10-27T14:08:17</modified>
+    <created>2018-10-27T15:30:23</created>
+    <modified>2018-10-27T15:30:23</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -125,7 +125,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <ambient>
-              <color sid="ambient">0 0 0 1</color>
+              <color sid="ambient">1 1 1 1</color>
             </ambient>
             <diffuse>
               <texture texture="qr_topRight_png-sampler"/>
@@ -153,7 +153,7 @@
     <geometry id="Plane-mesh" name="Plane">
       <mesh>
         <source id="Plane-mesh-positions">
-          <float_array id="Plane-mesh-positions-array" count="12">-7.47 -9.560001 0 7.47 -9.560001 0 -7.47 9.560001 0 7.47 9.560001 0</float_array>
+          <float_array id="Plane-mesh-positions-array" count="12">-12 -12 0 12 -12 0 -12 12 0 12 12 0</float_array>
           <technique_common>
             <accessor source="#Plane-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
@@ -173,7 +173,7 @@
           </technique_common>
         </source>
         <source id="Plane-mesh-map-0">
-          <float_array id="Plane-mesh-map-0-array" count="12">0.9999001 9.998e-5 9.998e-5 0.9999001 1.0004e-4 9.998e-5 0.9999001 9.998e-5 0.9999001 0.9999001 9.998e-5 0.9999001</float_array>
+          <float_array id="Plane-mesh-map-0-array" count="12">0.9998998 9.998e-5 9.998e-5 0.9999 9.998e-5 1.00139e-4 0.9998998 9.998e-5 0.9998998 0.9999 9.998e-5 0.9999</float_array>
           <technique_common>
             <accessor source="#Plane-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
@@ -205,7 +205,7 @@
         <instance_light url="#Lamp-light"/>
       </node>
       <node id="Plane" name="Plane" type="NODE">
-        <matrix sid="transform">1 0 0 0.03901386 0 1 0 -0.3901018 0 0 1 0.6341171 0 0 0 1</matrix>
+        <matrix sid="transform">0.3958333 0 0 0.9999973 0 0.3045833 0 -0.8965898 0 0 0.6744831 0.02076999 0 0 0 1</matrix>
         <instance_geometry url="#Plane-mesh" name="Plane">
           <bind_material>
             <technique_common>

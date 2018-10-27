@@ -18,7 +18,7 @@
         </visual>
       </link>
     </model>
-    <!--
+    
     <model name="qrTopRight">
       <pose>.5 .5 0 0 0 0</pose>
       <static>true</static>
@@ -30,6 +30,6 @@
         </visual>
       </link>
     </model>
-	-->
+	
   </world>
 </sdf>
