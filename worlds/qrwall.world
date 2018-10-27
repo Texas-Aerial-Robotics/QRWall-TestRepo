@@ -1,10 +1,22 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
   <world name="default">
-	<model name = "thewall">
-		<include>
-			<uri>model://thewall</uri>
-		</include>
-	</model>
-	</world>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="qrcube">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://qrcube.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
 </sdf>
