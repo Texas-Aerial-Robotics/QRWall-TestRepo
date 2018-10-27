@@ -1,4 +1,6 @@
 # QRWall-TestRepo
+Donald Trump simulator
+
 
 Put this in your bash file
 ```
@@ -11,11 +13,3 @@ Plesae type this in the terminal to run:
 roslaunch qrwall qrwall.launch
 ```
 
-To change QR code,
-```
-cd ~/catkin_ws/src/qrwall
-```
-then,
-```
-source trumpQR.sh
-```
