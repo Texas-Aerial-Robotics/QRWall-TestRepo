@@ -13,6 +13,6 @@ roslaunch qrwall qrwall.launch
 
 To change QR code, navigate to the models file, where trumpQR.bash is located. Then, run:
 ```
-source trumpQR.bash 
+source trumpQR.sh
 ```
 
